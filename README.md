@@ -11,8 +11,13 @@ working space for speaker
 2. AI beamformer for target speech enhancement and source localization (目標語音強化＆來源定位的AI波束形成器)
   * 學長論文：[結合陣列信號處理與深度學習於語音活性偵測、音質提升與聲源定位之應用](https://etd.lib.nctu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=NzyIzu/record?r1=92&h1=10)
   * [All-neural beamformer for continuous speech separation](https://arxiv.org/abs/2110.06428)
-    * `CSS` : continuous speech separation, aims to `separate overlapping voices` from a continuous influx of conversational audio spoken by `an unknown number of speakers`
-    * ex : a meeting conversation recorded by a microphone array
+    * `CSS`
+      * continuous speech separation
+      * aims to `separate overlapping voices` from a continuous influx of conversational audio spoken `by an unknown number of speakers`
+      * ex : a meeting conversation recorded by a microphone array
+    * goal
+      * previously, we use `minimum variance distortionless response(MDSR)` filter to improve the `automatic speech recognition (ASR) accuracy`
+      * aims to reach the same goal by `the all deep learning MVDR (ADL-MVDR) model` now
 
 3. Joint neural speaker localization and speech separation for any number of speakers (任意數量人物之語音分離＆定位)
   * [SLOGD: SPEAKER LOCATION GUIDED DEFLATION APPROACH TO SPEECH SEPARATION](https://arxiv.org/pdf/1910.11131.pdf)
