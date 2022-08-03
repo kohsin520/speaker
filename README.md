@@ -25,7 +25,18 @@ working space for speaker
 4. All neural telepresence system (全神經遠程呈現系統)
 * [a high-fidelity telepresence system](https://dl.acm.org/doi/10.1145/3478513.3480490)
   * present a real-time communication system, experience a face-to-face conversation
-  * 
+  * no need to wear special glasses or earphone
+  * the system consists of 
+    * `head-tracked autostereoscopic display`
+    * `high-resolution 3D capture`
+    * rendering subsystems
+    * `network transmission` using compressed color and depth video streams
+  * other distributions
+    * a novel `image-based` geometry fusion algorithm
+    * `free-space dereverberation`
+    * `talker localization`
+
+ 
   
 
 
