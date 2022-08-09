@@ -25,7 +25,16 @@ working space for speaker
 
 2. AI beamformer for target speech enhancement and source localization (目標語音強化＆來源定位的AI波束形成器)
   * 學長論文：[結合陣列信號處理與深度學習於語音活性偵測、音質提升與聲源定位之應用](https://etd.lib.nctu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=NzyIzu/record?r1=92&h1=10)
-  
+    * `語音活性偵測`
+      * 時常當作`前端系統`，以偵測是否有語音出現、決定後端系統是否啟動
+      * 必須是`低複雜度`的演算法
+      * 在極為吵雜的環境下，能保持敏感度與強健性
+    * 實驗結果
+    1.  以陣列訊號為本，
+    2.  
+
+
+
     <br/>
     
   * [All-neural beamformer for continuous speech separation](https://arxiv.org/abs/2110.06428)
