@@ -6,15 +6,36 @@ working space for speaker
 ### First group
 
 1. Geometry-agnostic multi-channel personalized speech enhancement (多通道特定人物語音強化)
-  * 學長論文：[用於智慧家庭助理與任意陣列配置之多通道個人語音活性偵測與音質提升系統](https://etd.lib.nctu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=NzyIzu/record)
+  * 學長論文：[用於智慧家庭助理與任意陣列配置之多通道個人語音活性偵測與音質提升系統](https://etd.lib.nctu.edu.tw/cgi-bin/gs32/gsweb.cgi?o=dallcdr&s=id=%22G021090335300%22.&searchmode=basic)
+    * 本論文提出之技術
+    1. `多通道個人語音活性偵測` (Voice Activity Detection, VAD)
+       * 針對目標用戶開啟`語音辨識系統`，以減少計算成本和電池消耗
+    2. `多通道目標語音增強技術`
+       * 提升電話會議中的語音品質    
+    <br/>
+    
+    * 為防受到背景噪音干擾，從嘈雜訊號中提取目標語音之作法：
+    1. 利用目標之`聲音特徵`：語者事先註冊的語音和`長短期空間相關(Long Short-Term Spatial Coherence)特徵`
+    2. 結合神經網路模型：`CNN`(作為編碼器、解碼器)和`RNN`(擁有長短期記憶(Long Short-Term Memory))
+
+    <br/>
+    
+    * 結果
+      * 將麥克風陣列所提取的`空間資訊`與`神經網路`結合，可以不受麥克風陣列的幾何影響，在`不同的陣列中`皆能`準確地偵測且提取目標語音`並`大幅提升語音增強`的效果。
 
 2. AI beamformer for target speech enhancement and source localization (目標語音強化＆來源定位的AI波束形成器)
   * 學長論文：[結合陣列信號處理與深度學習於語音活性偵測、音質提升與聲源定位之應用](https://etd.lib.nctu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=NzyIzu/record?r1=92&h1=10)
+  
+    <br/>
+    
   * [All-neural beamformer for continuous speech separation](https://arxiv.org/abs/2110.06428)
     * `CSS`
       * continuous speech separation
       * aims to `separate overlapping voices` from a continuous influx of conversational audio spoken `by an unknown number of speakers`
       * ex : a meeting conversation recorded by a microphone array
+    
+    <br/>
+    
     * goal
       * previously, we use `minimum variance distortionless response(MDSR)` filter to improve the `automatic speech recognition (ASR) accuracy`
       * aims to reach the same goal by `the all deep learning MVDR (ADL-MVDR) model` now
